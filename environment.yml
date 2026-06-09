@@ -1,0 +1,20 @@
+name: ncrna-gbm
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - nanofilt==2.8.0
+    - nanostat==1.6.0
+  - bioconda::minimap2==2.26
+  - bioconda::samtools==1.17
+  - bioconda::bedtools==2.31
+  - bioconda::flair==2.0
+  - bioconda::cpc2==1.0.1
+  - bioconda::viennarna==2.6
+  - r-base==4.5.3
+  - bioconductor-deseq2==1.50.2
+  - bioconductor-clusterprofiler==4.18.4
