@@ -18,11 +18,12 @@ using a composite multi-evidence scoring framework.
   suggesting a link to GBM Warburg metabolic reprogramming
 
 ## Pipeline
-Phase 1: QC           NanoStat + NanoFilt (Q≥7, length≥200bp)
-Phase 2: Alignment    minimap2 → SAMtools → FLAIR (lncRNA) / CIRI-long (circRNA)
-Phase 3: Classification  FEELnc + CPC2 → BEDTools → LNCipedia/GENCODE cross-ref
-Phase 4: Structure    RNAfold (MFE/nt) + miRDB v6.0 sponge prediction
-Phase 5: Functional   DESeq2 + Spearman co-expression + clusterProfiler + composite 5-component prioritisation score
+- Phase 1: QC           NanoStat + NanoFilt (Q≥7, length≥200bp)
+- Phase 2: Alignment    minimap2 → SAMtools → FLAIR (lncRNA) / CIRI-long (circRNA)
+- Phase 3: Classification  FEELnc + CPC2 → BEDTools → LNCipedia/GENCODE cross-ref
+- Phase 4: Structure    RNAfold (MFE/nt) + miRDB v6.0 sponge prediction
+- Phase 5: Functional   DESeq2 + Spearman co-expression + clusterProfiler + composite 5-component prioritisation score
+
 ## Reproduction
 This pipeline was developed in Google Colab with data mounted from Google Drive.
 
